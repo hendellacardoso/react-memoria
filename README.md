@@ -1,6 +1,6 @@
 # Jogo da Memória
 
-![alt text](assets/react-memoria.png)
+![alt text](main/src/assets/react-memoria.png)
 
 ## Available Scripts
 
