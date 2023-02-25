@@ -39,6 +39,15 @@ export const InfoArea = styled.div`
     }
 `;
 
+export const CreateBy = styled.div`
+    display: flex;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+`;
+
 export const GridArea = styled.div`
     flex: 1;
     display: flex;

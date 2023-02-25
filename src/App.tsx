@@ -52,7 +52,7 @@ const App = () => {
             }
             setGridItems(tmpGrid);
             setShowCount(0);
-          }, 1000);
+          }, 2000);
         }
         
         setMoveCount(moveCount =>  moveCount+1);
@@ -122,6 +122,7 @@ const App = () => {
           <InfoItem label="Movimento" value={moveCount.toString()}/>
         </C.InfoArea>
         <Button label="Reiniciar" icon={RestartIcon} onClick={resetAndCreateGrid}/>
+        <C.CreateBy>By: Hendell Cardoso</C.CreateBy>
       </C.Info>
       <C.GridArea>
         <C.Grid>
