@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import * as C from './App.styles';
-import logoImage from './assets/devmemory_logo.png';
+import logoImage from './assets/logotipo-dbz.png';
 import { Button } from './components/Button';
 import { InfoItem } from './components/InfoItem';
 import RestartIcon from './svgs/restart.svg';
 import { GridItemType } from './types/GridItemTypes';
 import { items } from './data/itens';
-import { match } from 'assert';
 import { GridItem } from './components/GridItem';
 import { formatTimeElapsed } from './helpers/formatTimerElapsed';
+
 
 
 const App = () => {
@@ -78,7 +78,7 @@ const App = () => {
     // 2.1 - griar um grid vazio  
     let tmpGrid: GridItemType[] = [];
     for(let i = 0; i < (items.length * 2); i++) tmpGrid.push({
-        item: null, shown: false, permanentShown: false
+        item: null, shown: false, permanentShown: false // <--- modificado aqui
     });
 
     // 2.2 - preencher o grid
@@ -118,7 +118,7 @@ const App = () => {
           <img src={logoImage} width="200" alt="" />
         </C.LogoLink>
         <C.InfoArea>
-          <InfoItem label='Temnpo' value={formatTimeElapsed(timeElapsed)}/>
+          <InfoItem label='Tempo' value={formatTimeElapsed(timeElapsed)}/>
           <InfoItem label="Movimento" value={moveCount.toString()}/>
         </C.InfoArea>
         <Button label="Reiniciar" icon={RestartIcon} onClick={resetAndCreateGrid}/>

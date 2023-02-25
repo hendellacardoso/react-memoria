@@ -5,7 +5,8 @@ export const Container = styled.div`
     width: 200px;
     height: 50px;
     display: flex;
-    background-color: #1550ff;
+    //background-color: #1550ff;
+    background-color: red;
     border-radius: 10px;
     cursor: pointer;
     opacity: 1;
@@ -22,7 +23,7 @@ export const IconArea = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-right: 2px solid rgba(255, 255, 255, .4);
     padding: 0, 15px;
 `;
 
